@@ -8,15 +8,19 @@ It ensures no single server is overloaded, prevents downtime, and improves scala
 
 # Load Balancer Architecture Diagram
 
-![Load Balancer Architecture](https://upload.wikimedia.org/wikipedia/commons/6/6b/Load_balancer.svg)
+ <img width="720" height="347" alt="image" src="https://github.com/user-attachments/assets/385d1c2c-a82f-4023-a90d-802dd97c63c1" />
+
 
 ---
 
 # Types of Load Balancers Based on OSI Model
+<img width="1100" height="258" alt="image" src="https://github.com/user-attachments/assets/07cd5213-b36c-411f-ab5d-010849f71655" />
+
 
 ## Network Load Balancer (Layer 4)
+<img width="376" height="134" alt="image" src="https://github.com/user-attachments/assets/1b8cb98e-58e5-4808-b94e-3b85ced88d36" />
 
-![Layer 4 Load Balancer](https://upload.wikimedia.org/wikipedia/commons/1/1e/OSI_model_L4_load_balancing.png)
+
 
 Layer 4 load balancers work at the transport layer and route traffic based on:
 * IP address
@@ -32,7 +36,8 @@ Layer 4 load balancers work at the transport layer and route traffic based on:
 
 ## Application Load Balancer (Layer 7)
 
-![Layer 7 Load Balancer](https://upload.wikimedia.org/wikipedia/commons/3/3c/OSI_model_L7_load_balancing.png)
+<img width="276" height="183" alt="image" src="https://github.com/user-attachments/assets/a25c2f5e-b061-47a1-8fa0-57647d3c7d21" />
+
 
 Layer 7 load balancers inspect application-level data like:
 * URLs
@@ -50,8 +55,8 @@ Layer 7 load balancers inspect application-level data like:
 # Load Balancing Algorithms
 
 ## 1. Round Robin
+<img width="720" height="449" alt="image" src="https://github.com/user-attachments/assets/43d88458-6c3a-42c7-a39f-a4bee0ad0b99" />
 
-![Round Robin](https://upload.wikimedia.org/wikipedia/commons/4/4e/Round-robin_load_balancing.png)
 
 ### Flow
 Client requests → Server A → Server B → Server C → repeat cycle
@@ -60,7 +65,8 @@ Client requests → Server A → Server B → Server C → repeat cycle
 
 ## 2. Weighted Round Robin
 
-![Weighted Round Robin](https://upload.wikimedia.org/wikipedia/commons/0/09/Weighted_round_robin_load_balancing.png)
+<img width="720" height="478" alt="image" src="https://github.com/user-attachments/assets/37fc4f08-9d6b-4178-adda-c1bbc44c1359" />
+
 
 Servers with higher weight get more traffic.
 
@@ -68,7 +74,8 @@ Servers with higher weight get more traffic.
 
 ## 3. IP Hash
 
-![IP Hash Load Balancing](https://upload.wikimedia.org/wikipedia/commons/2/2b/Load_balancing_IP_hash.svg)
+<img width="720" height="376" alt="image" src="https://github.com/user-attachments/assets/c8ef5114-97e1-4d69-a891-489f2d6ca368" />
+
 
 Same client IP always goes to same server.
 
@@ -108,6 +115,31 @@ Routes traffic to fastest responding server.
 ---
 
 # References
+
+
+* AWS Load Balancing Overview  
+  https://aws.amazon.com/what-is/load-balancing/
+
+* NGINX Load Balancing Guide  
+  https://www.nginx.com/resources/glossary/load-balancing/
+
+* Cloudflare Learning: Load Balancing  
+  https://www.cloudflare.com/learning/performance/what-is-load-balancing/
+
+* F5 Load Balancer Basics  
+  https://www.f5.com/services/resources/glossary/load-balancer
+
+* GeeksforGeeks - Load Balancer in System Design  
+  https://www.geeksforgeeks.org/system-design/what-is-load-balancer-system-design/
+
+* Microsoft Azure Load Balancer Documentation  
+  https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview
+
+* Google Cloud Load Balancing  
+  https://cloud.google.com/load-balancing/docs/load-balancing-overview
+
+* HAProxy Documentation  
+  https://www.haproxy.org/#docs
 
 * https://aws.amazon.com/what-is/load-balancing/
 * https://www.nginx.com/resources/glossary/load-balancing/
